@@ -1,152 +1,117 @@
-/* Reset CSS */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Header */
-header {
-  background-color: #222;
-  color: #fff;
-  text-align: center;
-  padding: 20px;
+/* Body background color */
+body {
+  background-color: #000;
+  color: #fff; /* Warna teks */
 }
 
-header h1 {
+/* Header styling */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem 9%;
+  background-color: #111; /* Warna latar belakang header */
+  padding: 20px;
+  text-align: center;
+  justify-content: space-between;
+  z-index: 100;
+  align-items: center;
+}
+
+.logo h1 {
+  color: #fff;
   font-size: 24px;
   margin-bottom: 10px;
 }
 
-header a {
-  color: #fff;
+.menu a {
+  color: #fff; /* Warna teks menu */
   text-decoration: none;
-  margin: 0 10px;
+  margin-right: 20px;
 }
 
-header a:hover {
-  color: #ddd;
+.menu a:hover {
+  color: #9c9c9c;
 }
 
-header hr {
-  border: 1px solid #ddd;
-  margin: 20px 0;
+section {
+  margin: auto;
+  display: flex;
+  padding: 100px 10%;
 }
 
-/* Contact */
-h1:nth-of-type(2) { /* Targets the second h1 element (Contact) */
-  font-size: 20px; /* Adjust font size as desired */
+/* Home section styling */
+.home {
+  padding: 100px ;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  padding-bottom: 200px;
 }
 
-.contact-info p {
-  font-size: 14px;
-  line-height: 1.5;
-  margin-bottom: 20px;
-}
-
-/* Form */
-form {
-  margin: 20px auto;
-  max-width: 500px;
-  padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-}
-
-fieldset {
-  border: none;
-  padding: 0;
-}
-
-label {
-  font-size: 14px;
-  margin-bottom: 5px;
-  display: block;
-}
-
-input, textarea {
-  width: 100%;
-  padding: 5px;
-  border: 1px solid #ddd;
-  border-radius: 3px;
+.home-content h2 {
+  margin-top: 100px; 
   margin-bottom: 10px;
+  font-weight: 800;
+  font-size: 45px;
+  padding-top: 100px;
 }
 
-textarea {
-  height: 100px;
+/* Gallery section styling */
+.gallery {
+  position: relative;
+  display: grid;
+  align-items: center;
+  margin-top: 100px;
 }
 
-button {
-  background-color: #222;
-  color: #fff;
-  font-size: 14px;
-  padding: 5px 10px;
-  border: 1px solid #ddd;
-  border-radius: 3px;
-  cursor: pointer;
+.gallery-content {
+  padding: 50px;
+  text-align: center;
 }
 
-button:hover {
-  background-color: #333;
+.gallery-content h2 {
+  text-align: center;
+  margin-bottom: 30px;
 }
 
-/* Blog */
-h2 {
-  font-size: 18px;
+.img {
+  gap: 10px;
+  padding: 0 10px;
+}
+
+.img img {
+  border-radius: 0.5rem;
+  margin: 10px;
+  object-fit: cover;
+  transition: 0.5s;
+}
+
+.img img:hover {
+  transform: scale(1.1);
+}
+/* Blog section styling */
+.blog-content {
+  padding: 50px;
+}
+
+.blog-content h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.blog-content h3 {
   margin-top: 20px;
 }
 
-h3 {
-  font-size: 16px;
-  margin-bottom: 10px;
-}
-
-p {
-  font-size: 14px;
-  line-height: 1.5;
+.blog-content p {
   margin-bottom: 20px;
-}
-
-/* Galeri */
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 20px auto;
-  max-width: 800px;
-}
-
-.gallery-item {
-  flex: 1 1 300px;
-  margin: 10px;
-  border: 1px solid #ddd;
-  padding: 10px;
-  text-align: center;
-}
-
-.gallery-item img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
-
-.gallery-item h4 {
-  font-size: 16px;
-  margin-top: 10px;
-}
-
-.gallery-item p {
-  font-size: 14px;
-  margin-bottom: 0;
-}
-
-/* Footer (optional) */
-footer {
-  background-color: #222;
-  color: #fff;
-  text-align: center;
-  padding: 20px;
-}
-
-footer p {
-  margin: 0;
 }

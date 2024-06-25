@@ -1,35 +1,82 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name ="author" content="Marvell">
-        <meta name = "description" content="Marvell Personal Homepage">
-        <title> Home | Marvell Personal Homepage </title>
-        <link rel="stylesheet" href="style.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Marvell">
+    <meta name="description" content="Marvell Personal Homepage">
+    <title>Marvell Personal Homepage</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <!-- menu -->
+        <div class="header">
+            <div class="logo">
+                <h1>Welcome to Marvell Personal Homepage</h1>
+            </div>
 
-    <body>
-        <header>
-            <h1> Welcome to Marvell Personal Homepage </h1>
-            <a href="index.html" target="Home">
-                Home
-            </a>
-            <br>
-            <a href="gallery.html" target="Gallery">
-                Gallery
-            </a>
-            <br>
-            <a href="blog.html" target="Blog">
-                Blog
-            </a>
-            <br>
-            <a href="contact.html" target="Contact">
-                Contact
-            </a>
-            <hr>
+            <i class="fa-solid fa-chevron-down" id="menubutton"></i>
+            
+            <nav class="menu">
+                <a href="#home" class="active">Home</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#blog">Blog</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
 
-            <h1>Hallo</h1>
-            <p> Perkenalkan nama saya Marvell Yehezkiel Palenewen dengan nim 220211060335. </p> 
-        </header>
-    </body>
+    <!-- home -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h2>Hallo</h2>
+            <p>Perkenalkan nama saya Marvell Yehezkiel Palenewen dengan nim 220211060335. Saya merupakan mahasiswa Teknik Informatika di Universitas Sam Ratulangi.</p>
+        </div>
+    </section>
+    
+
+    <!-- gallery -->
+    <section class="gallery" id="gallery">
+        <div class="gallery-content">
+            <h2>Gallery</h2>
+            <div class="img">
+                <img src="Foto1.jpg" alt="image" width="200" height="200">
+                <img src="Foto2.jpg" alt="image" width="200" height="200">
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- blog -->
+    <section class="blog" id="blog">
+        <div class="blog-content">
+            <h2>Blog</h2>
+            <h3 class="blog-title">5 Fitur Tersembunyi Google Maps</h3>
+            <p>Jelajahi dunia dengan cara baru! Temukan Street View Time Machine untuk melihat transformasi waktu, jelajahi dunia virtual dengan Google Earth, ukur jarak dengan mudah, dan bagikan penemuanmu dengan teman-teman.</p>
+
+            <h3 class="blog-title">Jelajah Alam Indonesia</h3>
+            <p>Temukan surga tersembunyi di Indonesia! Kunjungi Air Terjun Kancana yang memesona, saksikan keajaiban warna di Telaga Warna Dieng, nikmati ketenangan di Pulau Kakalang, jelajahi Lembah Bawak yang unik, dan temukan satwa liar di Taman Nasional Baluran.</p>
+
+            <h3 class="blog-title">Lab Mini di Ruma</h3>
+            <p>Ciptakan keajaiban sains di rumah! Buat gunung berapi soda kue yang meletus, pelangi dalam gelas yang indah, dan slime yang fantastis. Lakukan eksperimen seru dan mudah bersama si kecil dan pelajari sains dengan cara yang menyenangkan!</p>
+        </div>
+    </section>
+    
+
+    <!-- contact -->
+    <section class="contact" id="contact">
+        <h2>Contact</h2>
+        <div class="social-media">
+            <a href="https://github.com/marvellyehezkiel">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.instagram.com/marvellyehezkiel/">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
 </html>
